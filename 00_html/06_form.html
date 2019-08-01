@@ -1,0 +1,48 @@
+<!-- 어디로 제출하고, 어떻게 제출할지를 지정해 줘야함 -->
+<!DOCTYPE html>
+<!-- 세살버릇 여든간다 3 -->
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form에 대해 배워봅시다ㅏ.</title>
+</head>
+<body>
+  <!-- action은 form을 어디로 제출할지를 적어두는 곳이다. -->
+  <!-- action에 아무것도 적지 않으면 http://127.0.0.1:5500/00_html/06_form.html (현재 페이지) 로 보냄 -->
+  <!-- 보내면 http://127.0.0.1:5500/00_html/06_form.html?language=2&country=2&option=2 이 뜸. 이는 밑에 checked가 되어 있기에 -->
+  <!-- 태그에 name과 value를 넣어둬야 보내짐 따라서 지금 text, number 등은 보내지지 않고 있음-->
+  <!-- action에 #을 넣으면 다른 곳으로도 안보낸다는 뜻임, 자기 자신한테 보냄-->
+  <form action="#">
+    TEXT: <input type="text" value="디폴트 텍스트를 지정할 수 있습니다." placeholder="내용을 입력해주세요"><br>
+    NUMBER: <input type="number" placeholder="숫자를 입력해주세요" disabled><br>
+    PASSWORD: <input type="password" placeholder="비밀번호를 입력해주세요"><br>
+    E-MAIL: <input type="email" placeholder="이메일을 입력해주세요"><br>
+    DATE: <input type="date" value="2019-08-01" placeholder="날짜를 입력해주세요"><br>
+    
+    <!-- 사용자가 어떤 값을 체크했는지 value 값을 통해 알 수 있음. -->
+    <input type="radio" name="language" value="1">HTML<br>
+    <input type="radio" name="language" value="2" checked>CSS<br>
+    <input type="radio" name="language" value="3">JS<br>
+    <hr>
+    
+    <!-- 선택할 수 있는 옵션 -->
+    <!-- selected가 없으면 맨 처음 것이 나옴 -->
+    <select name="country">
+      <option value="1">한국</option>
+      <option value="2" selected>중국</option>
+      <option value="3" disabled>일본</option>
+    </select><br>
+
+    <!-- 체크박스: 여러개에 체크할 수 있음 -->
+    <input type="checkbox", name="option" value="1">
+    <input type="checkbox", name="option" value="2">
+    <input type="checkbox", name="option" value="3"><br>
+
+    <input type="color" value="#FF6600"><br>
+
+    <input type="submit" value="제출하기">
+  </form>
+</body>
+</html>
