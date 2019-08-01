@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selector Advanced</title>
+  <link rel="stylesheet" href="02_selector_adv.css">
+</head>
+<body>
+  <!-- 그룹 선택자 -->
+  <h1>그룹 선택자 적용</h1>
+  <p class="binch">그룹 선택자 적용</p>
+
+  <!-- 인접 형제 선택자 -->
+  <!-- 문법: S1 + S2 {attribute: value;} -->
+  <!-- => 같은 부모를 가지고 s1 오에 노는 s2 에 적용한다. -->
+  <div class="red">Red!</div>
+  <div class="blue">Blue!</div>
+  <div>purple?</div>
+  
+  <!-- 일반 형제 선택자
+  문법: S1~S@ { attribute: value; }
+  같은 부모를 가지고 s1 뒤에 오는 s2에 적용한다.
+  바로 뒤에 올 필요 없음 -->
+  <h2>일반 형제 선택자</h2>
+  <p>형제!</p>
+  <p>형제!</p>
+
+  <!-- 자식 선택자
+  자주 쓰임
+  -->
+  <ol class="parent">
+    <ul>
+      <li>ol 속에 ul 속에 li (자식 선택자)</li>
+    </ul>
+  </ol>
+  <ol class="parent">
+    <li>ol속에 바로 li 있음 (자식 선택자)</li>
+  </ol>
+
+  <!-- 후손 선택자
+  자식과 달리 아래 속하는 모든 거에 적용됨. -->
+  <ol class="grandparent">
+    <ul>
+      <li>ol 속에 ul 속에 li (후손 선택자)</li>
+    </ul>
+  </ol>
+  <ol class="grandparent">
+    <li>ol속에 바로 li 있음 (후손 선택자)</li>
+  </ol>
+
+</body>
+</html>

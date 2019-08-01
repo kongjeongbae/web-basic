@@ -1,0 +1,40 @@
+/* 그룹 선택자 */
+h1, h2, h3, h4, h5, h6, .binch {
+  color: chocolate;
+}
+
+/* 인접 형제 선택자 */
+/* 순서가 딱 맞아야 함   */
+.red + .blue + div {
+  background-color: purple;
+}
+
+/* 일반 형제 선택자 */
+h2 ~ p {
+  color: green;
+}
+
+/* 자식 선택자 */
+.parent > li {
+  color: red;
+}
+
+/* 후손 선택자 */
+.grandparent li {
+  color: blue;
+}
+
+/* div 세팅 */
+div {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+  background-color: red;
+}

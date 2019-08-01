@@ -1,0 +1,14 @@
+CSS
+HTML은 마크업 랭귀지, content를 정의, 정보와 구조화
+CSS는 프리젠테이션 담당, 스타일링
+
+HTML 없는 CSS는 무의미
+문법은 별개임.
+
+셀렉터(Selector) {선언(Property, Value); 선언(Property, Value);}
+h1 {color:blue; font-size:15px;}
+
+css 활용하기
+1. inline(인라인): html 요소의 style에 css 넣기
+2. embedding(내부참조): html head에 css 넣기
+3. link file(외부참조)
