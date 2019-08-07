@@ -1,0 +1,7 @@
+시험 암기사항
+- 크기 단위
+- box model
+- margin
+- display 속성(block, inline, inline-block, none)
+    block은 많으니 inline을 외울 것
+- 폰트 관련
