@@ -1,0 +1,38 @@
+body {
+  /* background-image: url(https://www.lightspeedinc.com/wp-content/uploads/2018/07/gilberto-parada-395382-unsplash.jpg); */
+  /* background-image: url(https://i.aagag.com/CUqFf.jpg); */
+  background-size: cover;
+  /* background-position: center;
+  background-repeat: no-repeat; */
+}
+
+/* h1 {
+  font-family: 'Beth Ellen', cursive;
+}
+
+p {
+  font-family: 'Beth Ellen', cursive;
+} */
+
+/* body {
+  font-family: 'Beth Ellen', cursive;
+} */
+
+h1 {
+  font-family: 'Beth Ellen', cursive;
+  font-size: 2.7rem;
+}
+mark {
+  color: rgb(34, 166, 255)
+}
+p {
+  font-family: 'East Sea Dokdo', cursive;
+  font-size: 2.5rem;
+  color: rgb(34, 166, 255);
+}
+
+span {
+  font-size: 150%;
+  font-family: 'Times New Roman', Times, serif;
+  color: beige;
+}
